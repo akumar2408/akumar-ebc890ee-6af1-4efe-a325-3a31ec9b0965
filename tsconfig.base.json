@@ -1,0 +1,20 @@
+
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2021",
+    "lib": ["es2021", "dom"],
+    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "rootDirs": ["."],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "exclude": ["node_modules", "tmp"]
+  
+}
+

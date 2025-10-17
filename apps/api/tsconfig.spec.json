@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "types": ["jest", "node"],
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+  
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "useDefineForClassFields": false
+    }
+  }
+  

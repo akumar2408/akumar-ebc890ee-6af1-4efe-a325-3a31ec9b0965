@@ -1,0 +1,25 @@
+{
+  "name": "dashboard",
+  "projectType": "application",
+  "root": "apps/dashboard",
+  "sourceRoot": "apps/dashboard/src",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ng serve dashboard --port 4200 --proxy-config apps/dashboard/proxy.conf.json"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": { "command": "ng build dashboard" }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ng test dashboard --watch=false --browsers=ChromeHeadless"
+      }
+    }
+  },
+  "tags": []
+}

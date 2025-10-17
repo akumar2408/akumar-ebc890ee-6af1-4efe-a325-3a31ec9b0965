@@ -1,0 +1,10 @@
+[2m> [22mjest --config apps/api/jest.config.ts
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2mapps/api/src/[22m[1mrbac.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2mapps/api/src/e2e/[22m[1mtasks.e2e.spec.ts[22m ([0m[1m[41m8.48 s[49m[22m[0m)
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 total
+[1mTests:       [22m[1m[32m7 passed[39m[22m, 7 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        [1m[33m8.814 s[39m[22m
+[2mRan all test suites[22m[2m.[22m

@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/apps/api",
+    "rootDir": "./src",
+
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "sourceMap": true,
+    "skipLibCheck": true,
+    
+  },
+  "include": ["src/**/*", "scripts/**/*"]
+}

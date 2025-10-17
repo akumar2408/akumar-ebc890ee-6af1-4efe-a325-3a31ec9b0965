@@ -1,0 +1,6 @@
+
+{
+  "name": "auth",
+  "root": "libs/auth",
+  "targets": {}
+}

@@ -1,0 +1,15 @@
+
+{
+  "extends": "nx/presets/npm.json",
+  "npmScope": "akumar",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": ["!{projectRoot}/**/*.spec.ts", "!{projectRoot}/**/*.spec.tsx", "default"],
+    "sharedGlobals": []
+  }
+}

@@ -1,0 +1,21 @@
+[2m> [22mnode -r ts-node/register -r tsconfig-paths/register apps/api/src/main.ts
+
+/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+apps/api/src/data-source.ts(16,45): error TS2345: Argument of type '{ type: "postgres" | "sqlite"; database: string | undefined; url: string | undefined; synchronize: true; logging: false; entities: (typeof User | typeof Task | typeof UserOrgRole | typeof Permission)[]; migrations: never[]; subscribers: never[]; }' is not assignable to parameter of type 'DataSourceOptions'.
+  Type '{ type: "postgres" | "sqlite"; database: string | undefined; url: string | undefined; synchronize: true; logging: false; entities: (typeof User | typeof Task | typeof UserOrgRole | typeof Permission)[]; migrations: never[]; subscribers: never[]; }' is missing the following properties from type 'AuroraMysqlConnectionOptions': region, secretArn, resourceArn
+
+    at createTSError (/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/yush/Downloads/akumar-ebc890ee-6af1-4efe-a325-3a31ec9b0965/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19) {
+  diagnosticCodes: [ 2345 ]
+}

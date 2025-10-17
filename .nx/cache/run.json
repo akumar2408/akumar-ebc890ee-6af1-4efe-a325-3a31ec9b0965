@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run dashboard:serve",
+    "startTime": "2025-10-17T22:19:34.471Z",
+    "endTime": "2025-10-17T22:19:36.082Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "dashboard:serve",
+      "target": "serve",
+      "projectName": "dashboard",
+      "hash": "15353543956182385454",
+      "startTime": "2025-10-17T22:19:34.477Z",
+      "endTime": "2025-10-17T22:19:36.082Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+
+# Local env & DB
+.env
+data.db
+
+# Builds
+/dist
+/.angular
+
+# Deps
+/node_modules

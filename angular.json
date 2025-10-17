@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/angular-cli",
+  "version": 1,
+  "projects": {
+    "dashboard": {
+      "projectType": "application",
+      "root": "apps/dashboard",
+      "sourceRoot": "apps/dashboard/src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/dashboard",
+            "index": "apps/dashboard/src/index.html",
+            "main": "apps/dashboard/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "apps/dashboard/tsconfig.app.json",
+            "inlineStyleLanguage": "css",
+            "assets": [
+              "apps/dashboard/src/favicon.ico",
+              "apps/dashboard/src/assets"
+            ],
+            "styles": ["apps/dashboard/src/styles.css"],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "dashboard:build",
+            "proxyConfig": "apps/dashboard/proxy.conf.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/dashboard/src/test.ts",
+            "tsConfig": "apps/dashboard/tsconfig.spec.json",
+            "karmaConfig": "apps/dashboard/karma.conf.js",
+            "assets": [
+              "apps/dashboard/src/favicon.ico",
+              "apps/dashboard/src/assets"
+            ],
+            "styles": ["apps/dashboard/src/styles.css"],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "e55f52b5-05bb-48ec-b19d-37f61ee13cfe"
+  }
+}
