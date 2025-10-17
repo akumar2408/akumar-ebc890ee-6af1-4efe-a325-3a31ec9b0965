@@ -123,7 +123,7 @@ libs/
 
 We model organizations with a simple 2-level hierarchy and attach users to orgs via a membership that carries a role.
 
-```mermaid
+```
 erDiagram
   User ||--o{ UserOrgRole : "memberships"
   Organization ||--o{ UserOrgRole : "memberships"
